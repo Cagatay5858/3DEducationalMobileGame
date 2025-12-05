@@ -10,8 +10,15 @@ public class MyPlayer : MonoBehaviour
     float currentSpeed;
     float speedVelocity;
 
+    Transform cameraTransform;
+
     public bool enableMobileInputs = false;
     public FixedJoystick joystick;
+
+    private void Start()
+    {
+        cameraTransform = Camera.main.transform;
+    }
 
     // Update is called once per frame
     void Update()
@@ -30,7 +37,7 @@ public class MyPlayer : MonoBehaviour
 
         if(inputDir != Vector2.zero)
         {
-            float rotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg;
+            float rotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
             transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, rotation, ref currentVelocity, smoothRotationtime );
 
         }
