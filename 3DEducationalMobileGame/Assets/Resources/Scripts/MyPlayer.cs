@@ -10,11 +10,22 @@ public class MyPlayer : MonoBehaviour
     float currentSpeed;
     float speedVelocity;
 
+    public bool enableMobileInputs = false;
+    public FixedJoystick joystick;
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 input = new(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 input = Vector2.zero;
+        if (enableMobileInputs)
+        {
+            input = new Vector2(joystick.Horizontal, joystick.Vertical);
+        }
+        else
+        {
+            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        }
+        
         Vector2 inputDir = input.normalized;
 
         if(inputDir != Vector2.zero)
