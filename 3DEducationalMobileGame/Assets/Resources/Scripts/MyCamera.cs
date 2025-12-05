@@ -6,6 +6,7 @@ public class MyCamera : MonoBehaviour
     public float Yaxis;
     public float Xaxis;
     public float RotationSens = 8f;
+    public bool enableMobileInputs = false;
 
     float RotationMin = -40f;
     float RotationMax = 80f;
@@ -15,11 +16,22 @@ public class MyCamera : MonoBehaviour
     Vector3 targetRotation;
     Vector3 currentVel;
 
+    
+
     // Update is called once per frame
     void LateUpdate()
     {
-        Yaxis += Input.GetAxis("Mouse X");
-        Xaxis -= Input.GetAxis("Mouse Y");
+
+        if (enableMobileInputs)
+        {
+
+        }
+        else
+        {
+            Yaxis += Input.GetAxis("Mouse X");
+            Xaxis -= Input.GetAxis("Mouse Y");
+        }
+        
 
         Xaxis = Mathf.Clamp(Xaxis, RotationMin, RotationMax);
 
