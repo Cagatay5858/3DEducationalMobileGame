@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: a496ec4cbc5fc1d44a75405e2a751feb, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 4f7046bd1f1f6124a87c99852710c418, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -946,6 +946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8067629
@@ -965,6 +969,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -2562,6 +2574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7826
@@ -2581,6 +2597,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -2842,7 +2866,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 700902204}
+  m_Mesh: {fileID: 511378046}
 --- !u!33 &163566687
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -3876,9 +3900,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 423284704578881306, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3725133863434357652, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Vanity_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725133863434357652, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4105458974457385262, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3938,6 +3970,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 865098535295429881, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 905988054205662006, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3581766091469362434, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6773224
@@ -3981,6 +4021,18 @@ PrefabInstance:
     - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Vanity_02_Set
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402672739489694930, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122966945842045136, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6384,7 +6436,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1641103286}
+  m_Mesh: {fileID: 700902204}
 --- !u!33 &381355020
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -8495,7 +8547,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1198587163}
+  m_Mesh: {fileID: 1894163044}
 --- !u!33 &442491737
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -9013,7 +9065,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 413998803}
+  m_Mesh: {fileID: 42511961}
 --- !u!33 &464971351
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -10141,7 +10193,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1702383170}
+  m_Mesh: {fileID: 964567757}
 --- !u!33 &535781230
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -10695,6 +10747,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 865098535295429881, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 905988054205662006, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3581766091469362434, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3103256
@@ -10738,6 +10798,18 @@ PrefabInstance:
     - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Vanity_02_Set (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402672739489694930, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122966945842045136, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11052,6 +11124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.140546
@@ -11071,6 +11147,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -11598,7 +11682,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1136563852}
+  m_Mesh: {fileID: 929555957}
 --- !u!33 &601913123
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -12230,71 +12314,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 80694246}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
---- !u!1 &614625765
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 614625767}
-  - component: {fileID: 614625766}
-  m_Layer: 0
-  m_Name: Reflection Probe (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!215 &614625766
-ReflectionProbe:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614625765}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
-  m_TimeSlicingMode: 0
-  m_Resolution: 32
-  m_UpdateFrequency: 0
-  m_BoxSize: {x: 9.103596, y: 1.9847323, z: 8.869991}
-  m_BoxOffset: {x: -0.09243584, y: 0.46190125, z: 0.10849953}
-  m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 100
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IntensityMultiplier: 1
-  m_BlendDistance: 1
-  m_HDR: 1
-  m_BoxProjection: 0
-  m_RenderDynamicObjects: 0
-  m_UseOcclusionCulling: 1
-  m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
---- !u!4 &614625767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614625765}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.35, y: 0.63, z: 37.43}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619201619
 GameObject:
   m_ObjectHideFlags: 0
@@ -16214,7 +16233,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1702383170}
+  m_Mesh: {fileID: 88998332}
 --- !u!33 &760766573
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -17672,7 +17691,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1372656232}
+  m_Mesh: {fileID: 1398230495}
 --- !u!33 &832548857
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -18027,6 +18046,10 @@ PrefabInstance:
     - target: {fileID: 2708256271075049980, guid: 318e5b11d6714a840ab89a855ed70b78, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Faucet_BathWall_Set_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708256271075049980, guid: 318e5b11d6714a840ab89a855ed70b78, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3377268808012487494, guid: 318e5b11d6714a840ab89a855ed70b78, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18793,6 +18816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.6002
@@ -18812,6 +18839,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.371
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -18905,7 +18940,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1641103286}
+  m_Mesh: {fileID: 1372656232}
 --- !u!33 &879824474
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -19811,7 +19846,7 @@ Transform:
   m_GameObject: {fileID: 933526606}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.56, z: 0}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19851,7 +19886,7 @@ Light:
   serializedVersion: 11
   m_Type: 3
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -19893,7 +19928,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 0.9, y: 0.09}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 5
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -19963,7 +19998,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1894163044}
+  m_Mesh: {fileID: 1518818616}
 --- !u!33 &937113763
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -21294,7 +21329,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1136563852}
+  m_Mesh: {fileID: 1641103286}
 --- !u!33 &1046506933
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -23234,7 +23269,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1641103286}
+  m_Mesh: {fileID: 1192385138}
 --- !u!33 &1143337877
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -24124,71 +24159,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1195230670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1195230672}
-  - component: {fileID: 1195230671}
-  m_Layer: 0
-  m_Name: Reflection Probe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!215 &1195230671
-ReflectionProbe:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195230670}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
-  m_TimeSlicingMode: 0
-  m_Resolution: 32
-  m_UpdateFrequency: 0
-  m_BoxSize: {x: 9.103596, y: 1.9882841, z: 8.869991}
-  m_BoxOffset: {x: -0.09243584, y: 0.47577477, z: 0.10849953}
-  m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 100
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IntensityMultiplier: 1
-  m_BlendDistance: 1
-  m_HDR: 1
-  m_BoxProjection: 0
-  m_RenderDynamicObjects: 0
-  m_UseOcclusionCulling: 1
-  m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
---- !u!4 &1195230672
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195230670}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.35, y: 2.7163444, z: 37.43}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198343208
 GameObject:
   m_ObjectHideFlags: 0
@@ -25215,6 +25185,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 865098535295429881, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 905988054205662006, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3581766091469362434, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4406776
@@ -25258,6 +25236,18 @@ PrefabInstance:
     - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Vanity_02_Set (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251167034364284856, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402672739489694930, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122966945842045136, guid: 067bd64e586c4ff41bbc5d8a250fa3f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27288,7 +27278,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 984498409}
+  m_Mesh: {fileID: 604304274}
 --- !u!33 &1367117882
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -30823,9 +30813,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 2378584745034572320, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506631198953326550, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8205642393364213368, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Toilet_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205642393364213368, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8839331199142622402, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31271,7 +31273,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1192385138}
+  m_Mesh: {fileID: 1702383170}
 --- !u!33 &1623130748
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -33125,9 +33127,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 2378584745034572320, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506631198953326550, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8205642393364213368, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Toilet_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205642393364213368, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8839331199142622402, guid: 282ad5ea8a81594419490cc982e34ad7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33980,7 +33994,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1398230495}
+  m_Mesh: {fileID: 984498409}
 --- !u!33 &1713341446
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -34664,6 +34678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8067629
@@ -34683,6 +34701,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -36992,7 +37018,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1198587163}
+  m_Mesh: {fileID: 413998803}
 --- !u!33 &1800942181
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -39923,7 +39949,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1398230495}
+  m_Mesh: {fileID: 1198587163}
 --- !u!33 &1957676680
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -41435,7 +41461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3617803025913177679, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06823516
+      value: -0.061
       objectReference: {fileID: 0}
     - target: {fileID: 3617803025913177679, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41472,6 +41498,10 @@ PrefabInstance:
     - target: {fileID: 4142981819669888245, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Bathtub_Standalone_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142981819669888245, guid: 499c6e3d6ee9050418756949728339ee, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41621,6 +41651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8486799
@@ -41640,6 +41674,14 @@ PrefabInstance:
     - target: {fileID: 2647898422681595148, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423045620967985251, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680752218095331780, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6941654648742186236, guid: 23bce888c3a73b24dad18e71ea57314e, type: 3}
       propertyPath: m_LocalScale.x
@@ -41765,9 +41807,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894525318}
     m_Modifications:
+    - target: {fileID: 423284704578881306, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3725133863434357652, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
       propertyPath: m_Name
       value: Cozy_Bathroom_Vanity_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725133863434357652, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4105458974457385262, guid: bac0b3bb296c4e2439527804577065fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42049,7 +42099,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 964567757}
+  m_Mesh: {fileID: 2007753383}
 --- !u!33 &2144384958
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -42717,7 +42767,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &543450652392814193
 Transform:
@@ -42964,7 +43014,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &979550668669262130
 GameObject:
@@ -42982,7 +43032,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &1123832552362832576
 MeshFilter:
@@ -43023,7 +43073,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1300264253189487080
 Transform:
@@ -43071,7 +43121,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &1396110413792481308
 MeshFilter:
@@ -43152,12 +43202,13 @@ GameObject:
   - component: {fileID: 5856315121821045179}
   - component: {fileID: 4625026007660769184}
   - component: {fileID: 1541998607318883345}
+  - component: {fileID: 5856315121821045180}
   m_Layer: 0
   m_Name: Cone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1589679708761155877
 Transform:
@@ -43280,7 +43331,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &1864702328456109296
 MeshRenderer:
@@ -43433,7 +43484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &2011878131584174888
 GameObject:
@@ -43446,12 +43497,13 @@ GameObject:
   - component: {fileID: 6888475618478937972}
   - component: {fileID: 4964421655212065956}
   - component: {fileID: 5430658038191745929}
+  - component: {fileID: 6888475618478937973}
   m_Layer: 0
   m_Name: Cone.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2050909786933102035
 Transform:
@@ -43552,7 +43604,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2312991945275875102
 Transform:
@@ -43585,7 +43637,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &2345890790323215207
 MeshRenderer:
@@ -43693,7 +43745,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &2542943783255952090
 GameObject:
@@ -43744,7 +43796,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &2638967573140893451
 MeshFilter:
@@ -43785,7 +43837,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &2893663846917118637
 GameObject:
@@ -43803,7 +43855,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &2923835979632560392
 GameObject:
@@ -43821,7 +43873,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &2943256631528584018
 GameObject:
@@ -43839,7 +43891,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &3121698097166569521
 MeshFilter:
@@ -43935,12 +43987,13 @@ GameObject:
   - component: {fileID: 170778801265689913}
   - component: {fileID: 5686745123207180058}
   - component: {fileID: 3188891235102564260}
+  - component: {fileID: 5686745123207180059}
   m_Layer: 0
   m_Name: Cone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &3323631521159994278
 MeshRenderer:
@@ -44048,7 +44101,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &3507737836281378592
 MeshFilter:
@@ -44089,7 +44142,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &3680759048648787624
 MeshRenderer:
@@ -44152,7 +44205,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &3733852989741985974
 MeshRenderer:
@@ -44487,7 +44540,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &4268219909044188299
 GameObject:
@@ -44505,7 +44558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &4304193663579825559
 MeshFilter:
@@ -44621,7 +44674,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &4522162066986752301
 MeshFilter:
@@ -44655,7 +44708,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &4538293100771265976
 MeshFilter:
@@ -44689,7 +44742,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &4820430769990719053
 GameObject:
@@ -44707,7 +44760,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &4881191708081160021
 MeshRenderer:
@@ -44823,7 +44876,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &5133278362416154037
 MeshRenderer:
@@ -45002,13 +45055,36 @@ GameObject:
   - component: {fileID: 2559122236096304944}
   - component: {fileID: 1396110413792481308}
   - component: {fileID: 4366625687762321968}
+  - component: {fileID: 5633022798868943504}
   m_Layer: 0
   m_Name: Cone.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!64 &5633022798868943504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633022798868943503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4746165098021687754, guid: 05fb808f49e660943826b160e855cd3e, type: 3}
 --- !u!4 &5642064202385706143
 Transform:
   m_ObjectHideFlags: 0
@@ -45031,6 +45107,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3291190920489836976}
+  m_Mesh: {fileID: 5769486934180388862, guid: 05fb808f49e660943826b160e855cd3e, type: 3}
+--- !u!64 &5686745123207180059
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291190920489836976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 5769486934180388862, guid: 05fb808f49e660943826b160e855cd3e, type: 3}
 --- !u!33 &5689941791332195739
 MeshFilter:
@@ -45064,7 +45162,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &5756448190406022477
 GameObject:
@@ -45082,7 +45180,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5856315121821045179
 Transform:
@@ -45099,6 +45197,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450652392814193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5856315121821045180
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545900265422968089}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6195245291975648998, guid: 05fb808f49e660943826b160e855cd3e, type: 3}
 --- !u!33 &5869906208373515130
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -45123,7 +45243,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &5915733048669159492
 MeshFilter:
@@ -45194,7 +45314,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &6223034437152428132
 MeshRenderer:
@@ -45318,7 +45438,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &6518478516857675299
 MeshRenderer:
@@ -45420,7 +45540,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6706259323832729989
 Transform:
@@ -45453,7 +45573,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6788263345892056374
 Transform:
@@ -45485,6 +45605,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450652392814193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6888475618478937973
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011878131584174888}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2709254679568902889, guid: 05fb808f49e660943826b160e855cd3e, type: 3}
 --- !u!1 &6897072527113271355
 GameObject:
   m_ObjectHideFlags: 0
@@ -45501,7 +45643,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &6964770474333466303
 MeshRenderer:
@@ -45617,7 +45759,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7076033672948875075
 Transform:
@@ -45892,7 +46034,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &7686964600635527235
 GameObject:
@@ -45910,7 +46052,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &7761139427232940154
 MeshFilter:
@@ -46156,7 +46298,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8422207355769267349
 Transform:
@@ -46204,7 +46346,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &8654812043902202474
 GameObject:
@@ -46222,7 +46364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8664248168534804948
 Transform:
@@ -46416,7 +46558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &9069373997122392728
 MeshFilter:
@@ -46511,5 +46653,3 @@ SceneRoots:
   - {fileID: 1777000837}
   - {fileID: 1263252696}
   - {fileID: 894525318}
-  - {fileID: 1195230672}
-  - {fileID: 614625767}
