@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30cc053198693149ac81804e730f3ad, type: 3}
+  m_Name: BilgisayarOyna_Data
+  m_EditorClassIdentifier: 
+  habitName: Bilgisayar Oyunu Oyna
+  isGood: 0
+  explanationIfWrong: "D\u0131\u015Far\u0131dan geldi\u011Fimizde elimizin \xFCst\xFCndeki
+    bakteriler dokundu\u011Fumuz her yere ta\u015F\u0131n\u0131r. \nAyr\u0131ca okuldan
+    veya d\u0131\u015Far\u0131dan gelir gelmez bilgisayar oyunu onyamak i\xE7in bilgisayar
+    ba\u015F\u0131na oturmak do\u011Fru de\u011Fildir. Bilgisayar kullan\u0131m\u0131n\u0131
+    g\xFCn i\xE7erisinde belirli bir s\xFCre (1 - 2 saat gibi) k\u0131s\u0131t\u0131
+    koyman senin i\xE7in faydal\u0131 olacakt\u0131r."
+  locationID: Masaustu_Bilgisayar
