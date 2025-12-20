@@ -13,12 +13,23 @@ public class PlayerController : MonoBehaviour
     private float yVelocity;
     private CharacterController cc;
 
+    [Header("Animation")]
+    public Animator animator; // Animator'ý buraya baðlayacaðýz
+
     [Header("Camera")]
     public Camera camera;
 
     void Awake()
     {
         cc = GetComponent<CharacterController>();
+
+        // Eðer Animator inspector'dan atanmadýysa otomatik bulmayý dene
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        // Eðer Animator hala yoksa (belki alt objededir), çocuklarda ara
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
     }
 
     void OnEnable()
@@ -38,15 +49,13 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-        // 1. GÜVENLÝK KONTROLÜ: CharacterController yoksa veya kapalýysa iþlem yapma
+        // 1. GÜVENLÝK KONTROLÜ
         if (cc == null || !cc.enabled) return;
 
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
 
         // --- IMPORTANT ---
-        // Always read direction from actual main camera
         Transform cam = camera.transform;
-
         Vector3 forward = cam.forward;
         Vector3 right = cam.right;
 
@@ -57,6 +66,19 @@ public class PlayerController : MonoBehaviour
         right.Normalize();
 
         Vector3 moveDir = forward * moveInput.y + right * moveInput.x;
+
+        // 2. ANIMASYON KONTROLÜ (YENÝ EKLENEN KISIM)
+        // ---------------------------------------------------------
+        if (animator != null)
+        {
+            // Eðer hareket girdisi (moveInput) 0'dan büyükse yürüyordur.
+            // sqrMagnitude performans için Magnitude yerine kullanýlýr.
+            bool isMoving = moveInput.sqrMagnitude > 0.01f;
+
+            // Animator'daki 'isWalking' parametresini güncelle
+            animator.SetBool("isWalking", isMoving);
+        }
+        // ---------------------------------------------------------
 
         // Rotate player toward camera direction
         if (moveDir.sqrMagnitude > 0.01f)
@@ -77,7 +99,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = moveDir * moveSpeed;
         move.y = yVelocity;
 
-        // 2. Hareket komutunu ver
+        // 3. Hareket komutunu ver
         cc.Move(move * Time.deltaTime);
     }
 }
