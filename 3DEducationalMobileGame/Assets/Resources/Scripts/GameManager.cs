@@ -5,11 +5,14 @@ public class GameManager : MonoBehaviour
 {
     [Header("Settings")]
     public Scenario scenario;
-    public float interactionDistance = 2.0f; // Hedefe ne kadar yaklaþýnca iþlem tamamlansýn?
+    public float interactionDistance = 3.0f;
 
     [Header("References")]
     public UIManager uiManager;
-    public GuidanceSystem guidanceArrow;
+
+    // DÝKKAT: Burasý artýk GuidanceSystem deðil, Arrow(1)'deki script olan GuidanceArrow olacak
+    public GuidanceArrow guidanceArrow;
+
     public Transform playerTransform;
 
     // State Variables
@@ -18,9 +21,13 @@ public class GameManager : MonoBehaviour
     private HabitData currentTargetHabit;
     private Transform currentTargetTransform;
     private bool isNavigating = false;
+    private bool canCompleteAction = false;
 
     void Start()
     {
+        // UI Action button setup...
+        // (Eðer UIManager singleton yaptýysan buradaki listener'a gerek kalmayabilir, 
+        // ama eski yapýn duruyorsa kalsýn)
         StartGame();
     }
 
@@ -40,43 +47,60 @@ public class GameManager : MonoBehaviour
         }
 
         ScenarioStep step = scenario.steps[currentStepIndex];
-
-        // UI Manager'a hangi alýþkanlýklarý göstereceðini ve seçilince ne yapacaðýný söylüyoruz
         uiManager.ShowChoices(step.stepTitle, step.habitOptionA, step.habitOptionB, OnHabitSelected);
     }
 
-    // Oyuncu butona bastýðýnda çalýþýr
+    // --- EN ÖNEMLÝ KISIM BURASI ---
     void OnHabitSelected(HabitData selectedHabit)
     {
-        playerChoices.Add(selectedHabit); // Seçimi kaydet
+        playerChoices.Add(selectedHabit);
         currentTargetHabit = selectedHabit;
 
-        // LocationManager'dan transformu bul
+        // 1. Seçilen alýþkanlýðýn ID'sini kullanarak LocationManager'dan gerçek Transformu al
         currentTargetTransform = LocationManager.Instance.GetLocation(selectedHabit.locationID);
 
         if (currentTargetTransform != null)
         {
+            // 2. Bulunan hedefi Arrow(1) üzerindeki GuidanceArrow scriptine gönder
             guidanceArrow.SetTarget(currentTargetTransform);
+
             isNavigating = true;
+            canCompleteAction = false;
         }
         else
         {
-            Debug.LogError("Lokasyon bulunamadý: " + selectedHabit.locationID);
-            CompleteAction(); // Lokasyon yoksa direkt geç
+            Debug.LogError("HATA: LocationManager'da bu ID bulunamadý: " + selectedHabit.locationID);
+            // Hedef yoksa direkt tamamla ki oyun takýlmasýn
+            CompleteAction();
         }
     }
 
     void Update()
     {
-        // Oyuncu hedefe ulaþtý mý kontrolü
         if (isNavigating && currentTargetTransform != null)
         {
-            float distance = Vector3.Distance(playerTransform.position, currentTargetTransform.position);
+            // Mesafeyi kontrol et
+            float distance = Vector3.Distance(
+                new Vector3(playerTransform.position.x, 0, playerTransform.position.z),
+                new Vector3(currentTargetTransform.position.x, 0, currentTargetTransform.position.z)
+            );
 
             if (distance <= interactionDistance)
             {
-                // Hedefe ulaþtý
-                CompleteAction();
+                if (!canCompleteAction)
+                {
+                    canCompleteAction = true;
+                    // Hedefe varýldý, butonu göster
+                    UIManager.Instance.ShowActionButton("Görevi Yap", CompleteAction);
+                }
+            }
+            else
+            {
+                if (canCompleteAction)
+                {
+                    canCompleteAction = false;
+                    UIManager.Instance.HideActionButton();
+                }
             }
         }
     }
@@ -84,11 +108,15 @@ public class GameManager : MonoBehaviour
     public void CompleteAction()
     {
         isNavigating = false;
+        canCompleteAction = false;
+
+        UIManager.Instance.HideActionButton();
+
+        // Görev bitti, oku gizle
         guidanceArrow.StopGuidance();
 
         Debug.Log("Eylem tamamlandý: " + currentTargetHabit.habitName);
 
-        // Bir sonraki adýma geç
         currentStepIndex++;
         ShowCurrentStepChoices();
     }

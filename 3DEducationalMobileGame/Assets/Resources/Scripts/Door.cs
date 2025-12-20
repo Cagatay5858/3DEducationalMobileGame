@@ -5,50 +5,80 @@ public class Door : MonoBehaviour
     private Animator animator;
     public bool isOpen = false;
 
-    // Oyuncu trigger içinde mi?
-    private bool playerInZone = false;
-    // Oyuncu Dýþarý (Outside) triggerýnda mý? (False ise içeridedir)
+    // Oyuncu kapýnýn hangi tarafýnda?
     private bool playerIsOutside = false;
+    private bool isPlayerInZone = false;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    // Trigger alanýna girince Butonu Göster
+    void OnTriggerEnter(Collider other)
     {
-        // Sadece oyuncu alandaysa ve E tuþuna basarsa çalýþýr
-        if (playerInZone && Input.GetKeyDown(KeyCode.E))
+        if (other.CompareTag("Player")) // Oyuncunun tag'i "Player" olmalý
         {
-            if (isOpen)
-            {
-                // Kapý açýksa, hangi tarafta olursak olalým kapatýrýz
-                CloseDoor();
-            }
-            else
-            {
-                // Kapý kapalýysa, bulunduðumuz tarafa göre doðru yöne açarýz
-                if (playerIsOutside)
-                {
-                    OpenOutwards(); // Dýþarýdayýz -> Ýçeri aç
-                }
-                else
-                {
-                    OpenInwards(); // Ýçerideyiz -> Dýþarý aç
-                }
-            }
+            isPlayerInZone = true;
+            UpdateDoorButton();
         }
     }
 
-    // Triggerlar bu fonksiyonu çaðýrarak durumu bildirir
-    public void SetPlayerZone(bool inZone, bool isOutsideSide)
+    // Trigger alanýndan çýkýnca Butonu Gizle
+    void OnTriggerExit(Collider other)
     {
-        playerInZone = inZone;
-        playerIsOutside = isOutsideSide;
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInZone = false;
+            UIManager.Instance.HideActionButton();
+        }
     }
 
-    // --- Animasyon Fonksiyonlarý (Ayný) ---
+    // Burasý "Outside" trigger'ý tarafýndan çaðrýlabilir (Eðer ayrý triggerlarýn varsa)
+    // Eðer tek bir trigger kullanýyorsan ve yönü oyuncunun konumuna göre belirleyeceksen:
+    public void SetPlayerZone(bool inZone, bool isOutside)
+    {
+        // Bu metodu mevcut yapýna göre uyarlayabilirsin. 
+        // Eðer trigger scriptlerin ayrýysa ve bunu çaðýrýyorsa:
+        isPlayerInZone = inZone;
+        playerIsOutside = isOutside;
 
+        if (isPlayerInZone) UpdateDoorButton();
+        else UIManager.Instance.HideActionButton();
+    }
+
+    void UpdateDoorButton()
+    {
+        string actionText = isOpen ? "Kapýyý Kapat" : "Kapýyý Aç";
+
+        // Butona basýlýnca "InteractWithDoor" fonksiyonu çalýþsýn
+        UIManager.Instance.ShowActionButton(actionText, InteractWithDoor);
+    }
+
+    public void InteractWithDoor()
+    {
+        if (isOpen)
+        {
+            CloseDoor();
+        }
+        else
+        {
+            // Oyuncunun kapýya göre konumunu bul (Basit Yöntem)
+            // Kapýnýn forward yönü ile oyuncu yönüne bakarak:
+            Vector3 directionToPlayer = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
+            float dotProduct = Vector3.Dot(transform.forward, directionToPlayer);
+
+            // Eðer dotProduct > 0 ise oyuncu kapýnýn önünde (Outside), < 0 ise arkasýndadýr (Inside)
+            // Bu yöntem triggerlardan daha güvenilirdir.
+            if (dotProduct > 0) OpenOutwards();
+            else OpenInwards();
+        }
+
+        // Kapý durumu deðiþtiði için buton yazýsýný güncelle (Aç -> Kapat)
+        UpdateDoorButton();
+    }
+
+    // ... OpenInwards, OpenOutwards, CloseDoor fonksiyonlarý AYNI kalacak ...
     public void OpenInwards()
     {
         if (!isOpen)
@@ -59,7 +89,7 @@ public class Door : MonoBehaviour
             isOpen = true;
         }
     }
-
+    // ... Diðerleri ...
     public void OpenOutwards()
     {
         if (!isOpen)
@@ -80,10 +110,5 @@ public class Door : MonoBehaviour
             animator.SetBool("OpenOutside", false);
             isOpen = false;
         }
-    }
-
-    public void ResetClose()
-    {
-        animator.SetBool("Close", false);
     }
 }
