@@ -38,6 +38,9 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
+        // 1. GÜVENLÝK KONTROLÜ: CharacterController yoksa veya kapalýysa iþlem yapma
+        if (cc == null || !cc.enabled) return;
+
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
 
         // --- IMPORTANT ---
@@ -74,6 +77,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = moveDir * moveSpeed;
         move.y = yVelocity;
 
+        // 2. Hareket komutunu ver
         cc.Move(move * Time.deltaTime);
     }
 }
