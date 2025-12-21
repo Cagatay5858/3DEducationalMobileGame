@@ -16,6 +16,9 @@ MonoBehaviour:
   - stepTitle: "D\u0131\u015Far\u0131dan eve d\xF6nd\xFC\u011F\xFCm\xFCzde ne yapmal\u0131y\u0131z?"
     habitOptionA: {fileID: 11400000, guid: c845b48035592e14088213ff6ed09603, type: 2}
     habitOptionB: {fileID: 11400000, guid: aa47d88d2fe0c9943b74943f9202eccc, type: 2}
+  - stepTitle: Yemek vakti geldi. Ne Yemeliyiz?
+    habitOptionA: {fileID: 11400000, guid: e17f0b0f6e6b818498c007bac298829f, type: 2}
+    habitOptionB: {fileID: 11400000, guid: b50338c45b9082f4b8d2d20f602404f5, type: 2}
   - stepTitle: "Yemek yedikten sonra ne yapmal\u0131y\u0131z?"
     habitOptionA: {fileID: 11400000, guid: 25835f9266c4c204e9352b3be413b42b, type: 2}
     habitOptionB: {fileID: 11400000, guid: f24d20f803cc45046b23d8df62f6b23b, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30cc053198693149ac81804e730f3ad, type: 3}
+  m_Name: Abur_Cubur_Ye
+  m_EditorClassIdentifier: 
+  habitName: Aburcuburlardan ye
+  isGood: 0
+  explanationIfWrong: "Ara s\u0131ra kendimizi \xE7ikolatalarla \xF6d\xFCllendirmek
+    k\xF6t\xFC de\u011Fildir. Fakat her zaman ilk tercihimiz annemizin yapt\u0131\u011F\u0131
+    g\xFCzel yemekler olmal\u0131."
+  locationID: Mutfak_Dolap
