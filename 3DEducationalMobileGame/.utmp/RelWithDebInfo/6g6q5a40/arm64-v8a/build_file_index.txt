@@ -1,0 +1,2 @@
+C:\Unity\3DEducationalMobileGame\3DEducationalMobileGame\3DEducationalMobileGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Unity\3DEducationalMobileGame\3DEducationalMobileGame\3DEducationalMobileGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

@@ -1,0 +1,5 @@
+C:/Unity/3DEducationalMobileGame/3DEducationalMobileGame/3DEducationalMobileGame/.utmp/RelWithDebInfo/6g6q5a40/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Unity/3DEducationalMobileGame/3DEducationalMobileGame/3DEducationalMobileGame/.utmp/RelWithDebInfo/6g6q5a40/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Unity/3DEducationalMobileGame/3DEducationalMobileGame/3DEducationalMobileGame/.utmp/RelWithDebInfo/6g6q5a40/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Unity/3DEducationalMobileGame/3DEducationalMobileGame/3DEducationalMobileGame/.utmp/RelWithDebInfo/6g6q5a40/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Unity/3DEducationalMobileGame/3DEducationalMobileGame/3DEducationalMobileGame/.utmp/RelWithDebInfo/6g6q5a40/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
